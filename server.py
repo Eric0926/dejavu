@@ -14,7 +14,8 @@ def process():
 	image = request.form['image']
 
 	if image:
-		results = vgg_search(image, 10)
+		#results = vgg_search(image, 10)
+		results = ["lalala"]
 
 		return jsonify({'results' : results})
 
