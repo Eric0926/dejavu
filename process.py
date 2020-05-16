@@ -77,8 +77,7 @@ def process():
 
 	if image:
 		results = vgg_search(image, 10)
-		rr = [{'img0':results[0], 'img1':results[1], 'img2':results[2], 'img3':results[3], 'img4':results[4], 'img5':results[5], 'img6':results[6], 'img7':results[7], 'img8':results[8], 'img9':results[9]}]
-		return jsonify({'result': rr})
+		return jsonify({'result': results})
 
 	return jsonify({'error' : 'Missing address!'})
 
