@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 		$.ajax({
 			data : {
-				image : $('#fname').val(),
+				image : $('#fname').val()
 			},
 			type : 'POST',
 			url : '/process'
