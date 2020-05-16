@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, jsonify
-import search
 from search import vgg_search
 
 app = Flask(__name__)
