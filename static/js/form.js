@@ -16,7 +16,7 @@ $(document).ready(function() {
 				$('#successAlert').hide();
 			}
 			else {
-				$('#successAlert').text(data.results).show();
+				$('#successAlert').text(data.result).show();
 				$('#errorAlert').hide();
 			}
 
