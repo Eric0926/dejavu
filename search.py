@@ -53,7 +53,7 @@ def vgg_search(img_url, nb_results):
         idx1 = idx[:3]
         idx2 = idx[3:]
         #https://storage.cloud.google.com/evaluation_images/111_14.jpg?authuser=2
-        images.append["https://storage.cloud.google.com/evaluation_images/{}_{}.jpg\n".format(idx1, idx2)]
+        images.append("https://storage.cloud.google.com/evaluation_images/{}_{}.jpg\n".format(idx1, idx2))
 
     return images
 
