@@ -16,7 +16,7 @@ def process():
 
 	if email:
 		#results = vgg_search(image, 10)
-		results = ["lalala"]
+		results = "lalala"
 
 		return jsonify({'results' : results})
 
