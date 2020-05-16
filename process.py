@@ -12,6 +12,8 @@ def index():
 def process():
 
 	image = request.form['name']
+	print(image)
+	print(str(image))
 
 	if image:
 		results = vgg_search(image, 10)
