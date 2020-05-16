@@ -55,7 +55,10 @@ def vgg_search(img_url, nb_results):
         idx1 = idx[:3]
         idx2 = idx[3:]
         #https://storage.cloud.google.com/evaluation_images/111_14.jpg?authuser=2
-        images.append("https://storage.cloud.google.com/evaluation_images/{}_{}.jpg\n".format(idx1, idx2))
+        if idx1 != "444":
+        	images.append("https://storage.cloud.google.com/evaluation_images/{}_{}.jpg\n".format(idx1, idx2))
+        else:
+        	images.append("https://storage.cloud.google.com/evaluation_images/{}_{}.png\n".format(idx1, idx2))
 
     return images
 
@@ -76,7 +79,7 @@ def process():
 		results = vgg_search(image, 10)
 		result = results[0]
 
-		return jsonify({'results' : len(results)})
+		return jsonify({'results' : results})
 
 	return jsonify({'error' : 'Missing address!'})
 
