@@ -7,7 +7,7 @@ $(document).ready(function() {
 				image : $('#fname').val(),
 			},
 			type : 'POST',
-			url : '/search'
+			url : '/process'
 		})
 		.done(function(data) {
 
