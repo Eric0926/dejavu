@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, jsonify
+import search
 from search import vgg_search
 
 app = Flask(__name__)
@@ -10,14 +11,13 @@ def index():
 @app.route('/process', methods=['POST'])
 def process():
 
-	#image = request.form['image']
 	name = request.form['name']
 
 	if name:
-		#results = vgg_search(image, 10)
-		results = name
+		results = vgg_search(image, 10)
+		result = results[0]
 
-		return jsonify({'results' : name})
+		return jsonify({'results' : result})
 
 	return jsonify({'error' : 'Missing address!'})
 
