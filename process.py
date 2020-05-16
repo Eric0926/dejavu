@@ -13,7 +13,7 @@ def process():
 
 	image = request.form['name']
 	print(image)
-	print(str(image))
+	print(type(image))
 
 	if image:
 		results = vgg_search(image, 10)
