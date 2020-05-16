@@ -17,7 +17,7 @@ $(document).ready(function() {
 			}
 			else {
 				$('#successAlert').text(data.results).show();
-				$('#img1').attr("src", data.results[0]).show();
+				$('#img1').attr("src", data.results);
 				$('#errorAlert').hide();
 			}
 
