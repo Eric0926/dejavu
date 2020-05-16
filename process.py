@@ -11,14 +11,13 @@ def index():
 def process():
 
 	#image = request.form['image']
-	email = request.form['email']
 	name = request.form['name']
 
-	if email:
+	if name:
 		#results = vgg_search(image, 10)
-		results = "lalala"
+		results = name
 
-		return jsonify({'results' : results})
+		return jsonify({'results' : name})
 
 	return jsonify({'error' : 'Missing address!'})
 
