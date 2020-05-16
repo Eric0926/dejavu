@@ -10,9 +10,11 @@ def index():
 @app.route('/process', methods=['POST'])
 def process():
 
-	image = request.form['image']
+	#image = request.form['image']
+	email = request.form['email']
+	name = request.form['name']
 
-	if image:
+	if email:
 		#results = vgg_search(image, 10)
 		results = ["lalala"]
 
