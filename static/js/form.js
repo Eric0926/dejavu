@@ -16,7 +16,7 @@ $(document).ready(function() {
 				$('#successAlert').hide();
 			}
 			else {
-				$('#successAlert').text(data.results).show();
+				$('#successAlert').text(data.results[0]).show();
 				$('#img2').attr("src", "https://storage.googleapis.com/flagged_evaluation_images/444_10_r2.png");
 				$('#errorAlert').hide();
 			}
